@@ -1,0 +1,1 @@
+# This is the third project as part of the responsive web design course. The task is to build a product landing page based on this template https://codepen.io/freeCodeCamp/full/RKRbwL

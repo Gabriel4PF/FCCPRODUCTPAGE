@@ -28,9 +28,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1.2;
-    background: black;
+    /* background: black; */
     font-size: 1rem;
     /* position: relative; */
+    background-color: #eee;
     font-family: 'Nunito', sans-serif;
 
 }
@@ -73,43 +74,161 @@ header{
     width: 100%;
     align-items: center;
     padding: 0 1.5rem;
+    justify-content: space-around;
+    min-height: 75px;
     
 
 }
+
+
 
 
 #header-img{
-
+width: 100%;
     max-width: 300px;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin-left: 20px;
+    text-align: center;
+  
     
 
-
-}
-@media (max-width:650px){
-
-
-header{
-    flex-direction: column;
 }
 
+
+
+@media(max-width:600px){
+    header{
+        flex-wrap: wrap;
+    }
+
+
+  
+
+}
+
+@media(max-width:650px){
+#logo{
+margin-top: 10px;
+width: 100%;
+
+}
+}
 
 #logo{
-text-align: center;
-    margin-top: 0.5rem;
-    width: 100%;
+
+    width: 60vw;
 }
 
 
 #nav-bar{
-margin-top: 0.55rem;
+    font-weight: 400px;
 }
-
 #nav-bar > ul{
-    text-align: center;
-}
+
+    width: 35vw;
+    justify-content: space-around;
+    
+    display: flex;
+  
+    }
+@media(max-width:650px){
+
+    #nav-bar{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #logo > img{
+
+        margin: 0 auto;
+    }
 }
 
+@media(max-width:650px){
+
+    #nav-bar > ul{
+        flex-direction: column;
+    }
+}
+
+
+
+
+  .btn{
+
+    font-weight: 800;
+    text-transform: uppercase;
+   font-size: 0.8rem;
+    border: 0px solid black;
+    border-radius: 0.1rem;
+    cursor:pointer;
+    transition: 1s background-color ;
+    
+
+}
+
+#hero .btn:hover{
+
+    background-color:#ff9500 ;
+
+}
+
+
+#hero > h2{
+
+    font-weight:800;
+}
+
+
+    #hero{
+
+        margin-top:50px;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #hero > h2{
+        margin-bottom: 10px;
+    }
+
+
+    input[id="email"]{
+
+        width: 100%;
+        max-width: 215px;
+        padding: 0.2rem;
+
+    }
+
+    input[id="submit"]{
+width: 100%;
+padding: 0 20px;
+max-width: 130px;
+background-color: #ffc300;
+margin-top: 10px;
+    }
+
+    @media(max-width:650px){
+
+        #hero{
+            margin-top:100px
+        }
+
+
+        
+    }
+
+
+    #features{
+        background-color: red;
+    }
